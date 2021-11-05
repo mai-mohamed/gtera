@@ -4,6 +4,7 @@ import { messageIcon, waiting } from "../../../utils/imgs";
 import "./Waiting.scss";
 
 const Waiting = ({ intl: { messages } }: any) => {
+  const handleContactClick = (): void => {};
   return (
     <div className="container d-flex waiting__wrapper justify-content-center">
       <div className=" waiting p-5">
@@ -11,7 +12,7 @@ const Waiting = ({ intl: { messages } }: any) => {
           <h3>{messages.landing.still}</h3>
           <h1>{messages.landing.cooking}</h1>
           <p className="my-3">{messages.landing.stayTuned}</p>
-          <button className="primary-btn">
+          <button className="primary-btn" onClick={handleContactClick}>
             <img src={messageIcon} alt="message icon" />
             <span className="mx-2">{messages.buttons.contact}</span>
           </button>
