@@ -5,23 +5,6 @@ body {
   font-size: 16px;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Sulphur Point", sans-serif;
-}
-
-p {
-  color: $primarycolor;
-  font-size: 1rem;
-}
-
-small {
-  color: $gray;
-  font-size: 0.688rem;
-}
-
 .primary-btn {
   background-color: $scecondaryColor;
   border-radius: 3.125rem;
@@ -31,4 +14,7 @@ small {
 }
 .cursor-pointer {
   cursor: pointer;
+}
+.error {
+  color: red;
 }

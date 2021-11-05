@@ -1,0 +1,32 @@
+$i: 0;
+@while $i < 48 {
+  .fsize-#{$i} {
+    font-size: (0.0625rem * (($i * 2) + 10)) !important;
+  }
+  $i: $i + 1;
+}
+
+$i: 100;
+@while $i < 1000 {
+  .weight-#{$i} {
+    font-weight: $i !important;
+  }
+  $i: $i + 100;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Sulphur Point", sans-serif;
+}
+
+p {
+  color: $primarycolor;
+  font-size: 1rem;
+}
+
+small {
+  color: $gray;
+  font-size: 0.688rem;
+}

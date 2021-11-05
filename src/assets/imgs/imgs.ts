@@ -5,6 +5,7 @@ import twitterIcon from "./twitter.svg";
 import messageIcon from "./message.svg";
 import phoneIcon from "./phone.svg";
 import waiting from "./waiting.svg";
+import sendIcon from "./send.svg";
 import logo from "./logo.svg";
 
 export {
@@ -14,6 +15,7 @@ export {
   twitterIcon,
   messageIcon,
   phoneIcon,
+  sendIcon,
   waiting,
   logo,
 };

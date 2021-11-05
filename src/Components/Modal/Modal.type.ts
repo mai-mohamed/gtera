@@ -3,5 +3,5 @@ export type IModal = {
   handleClose: () => void;
   heading: string;
   content: React.ReactNode;
-  size: "lg" | "sm" | "xl" | undefined;
+  size?: "lg" | "sm" | "xl" | undefined;
 };
