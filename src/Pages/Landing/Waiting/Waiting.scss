@@ -1,0 +1,55 @@
+.waiting__wrapper {
+  @media (min-width: 590px) {
+    .waiting-progress {
+      padding-top: 130px;
+    }
+  }
+  @media (max-width: 590px) {
+    .waiting-progress {
+      padding-top: 30px;
+    }
+  }
+
+  .progress {
+    height: 0.8rem;
+    border-radius: 0.45rem;
+    &-bar {
+      background: linear-gradient(
+        to right,
+        rgb(56, 75, 94) 0%,
+        rgb(236, 95, 96) 100%
+      );
+    }
+  }
+  .waiting-img {
+    position: relative;
+    right: 60px;
+    top: 180px;
+    background: url("../../../assets/imgs/Vector.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 100% 100%;
+    @media (max-width: 980px) {
+      display: none;
+    }
+  }
+}
+.waiting {
+  @media (min-width: 590px) {
+    background-image: url("./../../../assets/imgs/imac.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 600px;
+  }
+  @media (min-width: 1180px) {
+    width: 55%;
+  }
+  @media (min-width: 1180px) and (max-width: 980px) {
+    width: 70%;
+  }
+  h1 {
+    font-weight: bold;
+    font-size: 3.5rem;
+    max-width: 400px;
+  }
+}
