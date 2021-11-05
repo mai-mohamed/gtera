@@ -1,17 +1,20 @@
 import { ProgressBar } from "react-bootstrap";
 import { injectIntl } from "react-intl";
-import { waiting } from "../../../utils/imgs";
+import { messageIcon, waiting } from "../../../utils/imgs";
 import "./Waiting.scss";
 
 const Waiting = ({ intl: { messages } }: any) => {
   return (
-    <div className="container d-flex waiting__wrapper m-auto">
+    <div className="container d-flex waiting__wrapper justify-content-center">
       <div className=" waiting p-5">
-        <div className="waiting-content">
+        <div className="waiting-content p-3">
           <h3>{messages.landing.still}</h3>
           <h1>{messages.landing.cooking}</h1>
           <p className="my-3">{messages.landing.stayTuned}</p>
-          <button className="primary-btn">{messages.buttons.contact}</button>
+          <button className="primary-btn">
+            <img src={messageIcon} alt="message icon" />
+            <span className="mx-2">{messages.buttons.contact}</span>
+          </button>
         </div>
         <div className="waiting-progress">
           <ProgressBar now={20} />
