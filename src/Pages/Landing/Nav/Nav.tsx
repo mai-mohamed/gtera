@@ -3,7 +3,7 @@ import { logo } from "../../../utils/imgs";
 const Nav = () => {
   return (
     <>
-      <Navbar className="fixed-top">
+      <Navbar>
         <div className="container-fluid">
           <Navbar.Brand>
             <img src={logo} alt="gtera logo" />

@@ -5,7 +5,7 @@ import "./Landing.scss";
 const Landing = () => {
   return (
     <div className="landing__wrapper">
-      {/* <Nav /> */}
+      <Nav />
       <Footer />
     </div>
   );
