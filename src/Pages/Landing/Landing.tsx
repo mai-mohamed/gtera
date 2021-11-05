@@ -6,9 +6,11 @@ import "./Landing.scss";
 const Landing = () => {
   return (
     <div className="landing__wrapper">
-      <Nav />
-      <Waiting />
-      <Footer />
+      <div className="pattern">
+        <Nav />
+        <Waiting />
+        <Footer />
+      </div>
     </div>
   );
 };

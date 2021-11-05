@@ -3,6 +3,7 @@ import facebookIcon from "./facebook.svg";
 import linkedinIcon from "./linkedin.svg";
 import twitterIcon from "./twitter.svg";
 import phoneIcon from "./phone.svg";
+import waiting from "./waiting.svg";
 import logo from "./logo.svg";
 
 export {
@@ -11,5 +12,6 @@ export {
   linkedinIcon,
   twitterIcon,
   phoneIcon,
+  waiting,
   logo,
 };

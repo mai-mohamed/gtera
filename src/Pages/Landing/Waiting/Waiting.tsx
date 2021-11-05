@@ -1,10 +1,11 @@
-import { Button } from "react-bootstrap";
+import { ProgressBar } from "react-bootstrap";
+import { waiting } from "../../../utils/imgs";
 import "./Waiting.scss";
 
 const Waiting = () => {
   return (
-    <div className="container row ">
-      <div className="col-lg-6 waiting p-5">
+    <div className="container d-flex waiting__wrapper m-auto">
+      <div className=" waiting p-5">
         <div className="waiting-content">
           <h3>We are still</h3>
           <h1>Cooking Our Website...</h1>
@@ -12,8 +13,14 @@ const Waiting = () => {
             We are working on our website and going to launch it soon, Stay
             Tuned.
           </p>
-          <Button>contact</Button>
+          <button className="primary-btn">contact</button>
         </div>
+        <div className="waiting-progress">
+          <ProgressBar now={20} />
+        </div>
+      </div>
+      <div className="waiting-img">
+        <img src={waiting} alt="waiting img" />
       </div>
     </div>
   );
