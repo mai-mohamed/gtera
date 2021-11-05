@@ -10,7 +10,7 @@ import {
 const Footer = ({ intl: { messages } }: any) => {
   return (
     <footer className="container-fluid">
-      <div className="row">
+      <div className="row align-items-center">
         <div className="col-lg-6">
           <div className="d-flex align-items-start my-2">
             <img src={phoneIcon} alt="phone icon" />
@@ -24,19 +24,19 @@ const Footer = ({ intl: { messages } }: any) => {
             </div>
           </div>
         </div>
-        <div className="col-lg-6 text-lg-end text-center">
+        <div className="col-lg-6 text-lg-end">
           <div className="social-media">
             <a href="#" target="_blank" className="mx-1">
               <img src={linkedinIcon} alt="linkedin icon" />
             </a>
             <a href="#" target="_blank" className="mx-1">
-              <img src={twitterIcon} alt="twitter icon" />
-            </a>
-            <a href="#" target="_blank" className="mx-1">
               <img src={facebookIcon} alt="facebook icon" />
             </a>
+            <a href="#" target="_blank" className="mx-1">
+              <img src={twitterIcon} alt="twitter icon" />
+            </a>
           </div>
-          <small className="mt-3 d-block">{messages.landing.copyRights}</small>
+          <small className="my-3 d-block">{messages.landing.copyRights}</small>
         </div>
       </div>
     </footer>

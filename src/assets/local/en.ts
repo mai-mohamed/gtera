@@ -4,6 +4,8 @@ const en = {
       still: "We are still",
       cooking: "Cooking Our Website...",
       contact: " Egypt: +20 1033 033 411 / Qatar: +974 3000 1629",
+      stayTuned:
+        "We are working on our website and going to launch it soon, Stay Tuned.",
       firstLocation:
         "Egypt: 20 Greentowers Compound, 20 St., Smouha, Alexandria.",
       secondLocation:
