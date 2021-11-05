@@ -1,0 +1,22 @@
+@import "./variables";
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Sulphur Point", sans-serif;
+}
+
+p {
+  color: $primarycolor;
+  font-size: 1rem;
+}
+
+small {
+  color: $gray;
+  font-size: 0.688rem;
+}

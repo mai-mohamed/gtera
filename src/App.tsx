@@ -1,5 +1,12 @@
+import Landing from "./Pages/Landing/Landing";
+import "./App.scss";
+
 function App() {
-  return <div className="App">gtera</div>;
+  return (
+    <div>
+      <Landing />
+    </div>
+  );
 }
 
 export default App;
