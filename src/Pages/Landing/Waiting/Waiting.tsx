@@ -1,19 +1,17 @@
 import { ProgressBar } from "react-bootstrap";
+import { injectIntl } from "react-intl";
 import { waiting } from "../../../utils/imgs";
 import "./Waiting.scss";
 
-const Waiting = () => {
+const Waiting = ({ intl: { messages } }: any) => {
   return (
     <div className="container d-flex waiting__wrapper m-auto">
       <div className=" waiting p-5">
         <div className="waiting-content">
-          <h3>We are still</h3>
-          <h1>Cooking Our Website...</h1>
-          <p className="my-3">
-            We are working on our website and going to launch it soon, Stay
-            Tuned.
-          </p>
-          <button className="primary-btn">contact</button>
+          <h3>{messages.landing.still}</h3>
+          <h1>{messages.landing.cooking}</h1>
+          <p className="my-3">{messages.landing.stayTuned}</p>
+          <button className="primary-btn">{messages.buttons.contact}</button>
         </div>
         <div className="waiting-progress">
           <ProgressBar now={20} />
@@ -25,4 +23,4 @@ const Waiting = () => {
     </div>
   );
 };
-export default Waiting;
+export default injectIntl(Waiting);

@@ -1,3 +1,4 @@
+import { injectIntl } from "react-intl";
 import {
   facebookIcon,
   linkedinIcon,
@@ -6,25 +7,20 @@ import {
   twitterIcon,
 } from "../../../utils/imgs";
 
-const Footer = () => {
+const Footer = ({ intl: { messages } }: any) => {
   return (
     <footer className="container-fluid">
       <div className="row">
         <div className="col-lg-6">
           <div className="d-flex align-items-start my-2">
             <img src={phoneIcon} alt="phone icon" />
-            <p className=" px-3">
-              Egypt: +20 1033 033 411 / Qatar: +974 3000 1629
-            </p>
+            <p className=" px-3">{messages.landing.contact}</p>
           </div>
           <div className="d-flex align-items-start my-2">
             <img src={locationIcon} alt="location icon" className="pt-1" />
             <div className="px-3">
-              <p>Egypt: 20 Greentowers Compound, 20 St., Smouha, Alexandria.</p>
-              <p>
-                Qatar: Building 34, 319 St., Zone 69, Marina Twin Towers,
-                Lusail.
-              </p>
+              <p>{messages.landing.firstLocation}</p>
+              <p>{messages.landing.secondLocation}</p>
             </div>
           </div>
         </div>
@@ -40,13 +36,11 @@ const Footer = () => {
               <img src={facebookIcon} alt="facebook icon" />
             </a>
           </div>
-          <small className="mt-3 d-block">
-            © All rights reserved to Gtera Solutions Company.2021
-          </small>
+          <small className="mt-3 d-block">{messages.landing.copyRights}</small>
         </div>
       </div>
     </footer>
   );
 };
 
-export default Footer;
+export default injectIntl(Footer);
