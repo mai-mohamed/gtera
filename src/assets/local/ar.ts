@@ -1,5 +1,5 @@
 const ar = {
-  en: {
+  ar: {
     landing: {
       still: "We are still",
       cooking: "Cooking Our Website...",
@@ -14,6 +14,18 @@ const ar = {
     },
     buttons: {
       contact: "ContactUs",
+      send: "Send",
+      cancel: "Cancel",
+    },
+    contactForm: {
+      fullNameLabel: "Full Name",
+      fullNamePlaceholder: "Type Full Name",
+      emailLabel: "Your Email",
+      emailPlaceholder: "example@mail.com",
+      phoneLabel: "Mobile Number (Optional)",
+      phonePlaceholder: "Type Number",
+      messageLabel: "message",
+      messagePlaceholder: "Type Your Message",
     },
   },
 };
