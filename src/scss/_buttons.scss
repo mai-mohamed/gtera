@@ -1,0 +1,16 @@
+.primary-btn {
+  background-color: $scecondaryColor;
+  border-radius: 3.125rem;
+  padding: 0.75rem 2.5rem;
+  border: unset;
+  color: white;
+}
+.btn-light {
+  background-color: white;
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: unset !important;
+    background-color: white;
+  }
+}

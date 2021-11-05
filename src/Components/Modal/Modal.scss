@@ -2,7 +2,13 @@
   position: absolute !important;
   right: 0 !important;
   margin: unset !important;
-  width: 50% !important;
+  @media (min-width: 800px) {
+    width: 40% !important;
+  }
+  @media (max-width: 800px) {
+    width: 100% !important;
+  }
+
   bottom: 0;
   top: 0;
   background: white;
