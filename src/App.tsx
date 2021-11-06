@@ -4,6 +4,7 @@ import Landing from "./Pages/Landing/Landing";
 import "./App.scss";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
+import Routes from "./routes/routes";
 
 function App() {
   useEffect(() => {
@@ -18,7 +19,8 @@ function App() {
         className={lang === "ar" ? "rtl" : "ltr"}
         dir={lang === "ar" ? "rtl" : "ltr"}
       >
-        <Landing />
+        <Routes />
+        {/* <Landing /> */}
       </div>
     </IntlProvider>
   );
