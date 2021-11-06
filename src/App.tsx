@@ -1,6 +1,5 @@
 import { IntlProvider } from "react-intl";
 import messages from "./assets/local/messages";
-import Landing from "./Pages/Landing/Landing";
 import "./App.scss";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
@@ -20,7 +19,6 @@ function App() {
         dir={lang === "ar" ? "rtl" : "ltr"}
       >
         <Routes />
-        {/* <Landing /> */}
       </div>
     </IntlProvider>
   );
