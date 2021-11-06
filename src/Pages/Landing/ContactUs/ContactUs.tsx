@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { injectIntl } from "react-intl";
+import { useDispatch } from "react-redux";
 import Input from "../../../Components/Input/Input";
+import { submitContactRequest } from "../../../store/Landing/actions";
 import { sendIcon } from "../../../utils/imgs";
 import "./ContactUs.scss";
 
@@ -10,6 +12,8 @@ type IContact = {
 };
 
 const ContactUs = ({ handleCloseModal, intl: { messages } }: IContact) => {
+  const dispatch = useDispatch();
+
   const [contactForm, setContactForm] = useState({
     fullName: "",
     email: "",
@@ -29,7 +33,7 @@ const ContactUs = ({ handleCloseModal, intl: { messages } }: IContact) => {
       contactForm.email !== "" &&
       contactForm.message !== ""
     ) {
-      //submition action
+      dispatch(submitContactRequest(contactForm));
     } else {
       setContactFormError(true);
     }

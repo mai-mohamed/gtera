@@ -1,11 +1,19 @@
 import { Navbar } from "react-bootstrap";
+import { useDispatch, useSelector } from "react-redux";
+import { setCurrentLang } from "../../../store/Lang/actions";
 import { logo } from "../../../utils/imgs";
 const Nav = () => {
-  const lang = localStorage.getItem("lang");
+  const dispatch = useDispatch();
+
+  const lang = useSelector(({ lang }: { lang: { lang: string } }) => lang.lang);
   const handleToggleLang = (): void => {
-    lang == "en"
-      ? localStorage.setItem("lang", "ar")
-      : localStorage.setItem("lang", "en");
+    if (lang == "en") {
+      dispatch(setCurrentLang("ar"));
+      localStorage.setItem("lang", "ar");
+    } else {
+      dispatch(setCurrentLang("en"));
+      localStorage.setItem("lang", "en");
+    }
   };
   return (
     <>
