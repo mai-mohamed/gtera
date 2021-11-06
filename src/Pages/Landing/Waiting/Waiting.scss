@@ -54,3 +54,11 @@
     }
   }
 }
+
+.rtl {
+  .waiting-img {
+    position: relative;
+    left: 60px;
+    right: unset;
+  }
+}
